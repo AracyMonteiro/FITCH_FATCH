@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+
+  background-image: url("./assets/bg-pattern-dark.png"); /* Caminho para a imagem de fundo no diretório public */
+  background-color: rgb(250, 215, 173);
+}

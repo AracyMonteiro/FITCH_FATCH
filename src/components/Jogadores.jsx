@@ -2,7 +2,7 @@ import React from "react";
 
 const Jogadores = ({ jogadores }) => {
   return (
-    <div className="Jogadores mb-5">
+    <div className="Jogadores mb-5 ">
       {jogadores.map((jogador, index) => (
         <div key={index} className="mb-2">
           <span className="text-xl font-bold text-gray-700">{jogador.nome}</span>

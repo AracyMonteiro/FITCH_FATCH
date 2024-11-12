@@ -41,7 +41,7 @@ const App = () => {
   };
 
   return (
-    <div className="App bg-cover bg-center min-h-screen" style={{ backgroundImage: `url(/bg-pattern.png)` }}>
+    <div  style={{ backgroundImage: `url(/bg-pattern.png)` }}>
       <Header />
       <div className="container mx-auto text-center mt-5">
         <Jogadores jogadores={jogadores} setJogadores={setJogadores} />

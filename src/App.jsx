@@ -44,7 +44,7 @@ const App = () => {
     <div style={{ backgroundImage: `url(/bg-pattern.png)` }}>
       <Header />
       <div className=" mx-auto text-center mt-5">
-        <Jogadores jogadores={jogadores} />
+        <Jogadores jogadores={jogadores} setJogadores={setJogadores} />
         <Tabuleiro tabuleiro={tabuleiro} jogar={jogar} />
         {vencedor && (
           <div className="absolute inset-0 flex justify-center items-center">

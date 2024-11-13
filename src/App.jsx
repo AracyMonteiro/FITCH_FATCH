@@ -21,13 +21,13 @@ const App = () => {
     novoTabuleiro[index] = jogadores[jogadorAtual].simbolo;
     setTabuleiro(novoTabuleiro);
 
-    const ganhou = COMBINACOES.some(comb =>
-      comb.every(i => novoTabuleiro[i] === jogadores[jogadorAtual].simbolo)
+    const ganhou = COMBINACOES.some((comb) =>
+      comb.every((i) => novoTabuleiro[i] === jogadores[jogadorAtual].simbolo)
     );
 
     if (ganhou) {
-      setVencedor(jogadores[jogadorAtual].nome);
-    } else if (novoTabuleiro.every(cell => cell)) {
+      setVencedor(jogadores[jogadorAtual].nome); 
+    } else if (novoTabuleiro.every((cell) => cell)) {
       setVencedor("Empate");
     } else {
       setJogadorAtual((prev) => 1 - prev);
@@ -41,12 +41,16 @@ const App = () => {
   };
 
   return (
-    <div  style={{ backgroundImage: `url(/bg-pattern.png)` }}>
+    <div style={{ backgroundImage: `url(/bg-pattern.png)` }}>
       <Header />
-      <div className="container mx-auto text-center mt-5">
-        <Jogadores jogadores={jogadores} setJogadores={setJogadores} />
+      <div className=" mx-auto text-center mt-5">
+        <Jogadores jogadores={jogadores} />
         <Tabuleiro tabuleiro={tabuleiro} jogar={jogar} />
-        {vencedor && <GameOver vencedor={vencedor} jogarNovamente={jogarNovamente} />}
+        {vencedor && (
+          <div className="absolute inset-0 flex justify-center items-center">
+            <GameOver vencedor={vencedor} jogarNovamente={jogarNovamente} />
+          </div>
+        )}
       </div>
     </div>
   );

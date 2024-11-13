@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from '../assets/game-logo.png';
+import logo from '../assets/game-logo.png'; 
 
 export default function Header() {
   return (
-    <header className="flex flex-col items-center mt-8 mb-6 ">
-      <img className="mb-14" src={logo} alt="Logo Fitche Fatche" />
-      
-      <h1 className="text-3xl font-bold text-yellow-500">Fitche Fatche</h1>
+    <header className="flex center items-center mx-auto " >
+      <img className="mb-20 w-32 h-32" src={logo} alt="Fitch Fatch" />
+      <h1 className="mt-8 text-4xl text-white uppercase font-title">Fitche Fatche</h1>
     </header>
   );
-}
+};

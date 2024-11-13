@@ -1,4 +1,3 @@
-// src/components/GameOver.jsx
 import React from 'react';
 
 function GameOver({ vencedor, jogarNovamente }) {

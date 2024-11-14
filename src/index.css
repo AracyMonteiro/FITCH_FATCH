@@ -11,8 +11,7 @@ html {
 } 
 
 body {
-
-  background-image: url("./assets/bg-pattern-dark.png"); 
+  background-image: url("./assets/bg-pattern-dark.png");
   background-color: rgb(250, 215, 173);
   background-attachment: fixed;
 }

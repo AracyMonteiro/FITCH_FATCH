@@ -27,7 +27,7 @@ const App = () => {
 
     if (ganhou) {
       setVencedor(jogadores[jogadorAtual].nome); 
-    } else if (novoTabuleiro.every((cell) => cell)) {
+    } else if (novoTabuleiro.every((celula) => celula)) {
       setVencedor("Empate");
     } else {
       setJogadorAtual((prev) => 1 - prev);
